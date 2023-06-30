@@ -1,0 +1,1256 @@
+h1 {
+    color: rgb(255, 42, 0);
+    text-align: center;
+    margin: 0px;
+    font-size: 4 em;
+    font-weight: 1000;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.main_h1 h1{
+  font-family: 'Lato', sans-serif;
+  -webkit-text-stroke:  2px  rgb(208, 97, 0);
+  text-shadow: 5px 5px 2px rgb(0, 0, 0);
+  font-size: 500px;
+  color: rgb(147, 60, 1);
+  font-size: 10rem;
+}
+
+
+.slide_bg {
+  width: 100%;
+  height: 80vh;
+  background-position: bototom;
+  background-size: cover;
+  background-repeat: no-repeat;
+  /*backface-visibility: hidden;*/
+  animation: slidebg 10s infinite;
+  /*animation-timing-function: ease-in;*/
+  /*background-image: url('../../photo/intro1.jpg');*/
+
+}
+
+
+.main_h1{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh
+
+}
+
+
+
+@keyframes slidebg {
+    0% {
+      background-image: url('../../photo/intro1.jpg');
+      background-position: bottom 30%;
+
+    }
+
+    20%{
+      background-image: url('../../photo/intro1.jpg');
+      background-position: right 35% top 30%;
+    }
+
+    20.01%{
+      background-image: url('../../photo/intro2.jpg');
+      background-position: bottom;
+    }
+
+    40%{
+      background-image: url('../../photo/intro2.jpg');
+      background-position: center;
+    }
+
+
+    40.01%{
+      background-image: url('../../photo/intro3.jpg');
+      background-position:center ;
+    }
+
+
+    60%{
+      background-image: url('../../photo/intro3.jpg');
+      background-position: right 35% bottom 65%;
+    }
+
+    60.01%{
+      background-image: url('../../photo/intro4.jpg');
+      background-position: bottom 95%;
+    }
+
+    80% {
+      background-image: url('../../photo/intro4.jpg');
+      background-position: center ;
+  
+    }
+
+    80.01% {
+      background-image: url('../../photo/intro5.jpg');
+  
+      background-position: bottom 40%;
+    }
+
+    100% {
+      background-image: url('../../photo/intro5.jpg');
+
+      background-position: center 10%
+    }
+
+  }
+
+
+
+
+.nav-bar {
+    height: 5vh;
+    background-color:#964b00e6;
+    margin-bottom: 0vh;
+    margin-top: 0; 
+    font-size: 2vh;
+    text-align: center;
+    
+}
+
+
+
+.a-nav a  {
+    display: block;
+    float:left;
+    margin-left: 9vw;
+    margin-top: 1.3vh;
+    text-decoration: none;
+    font-size: 2vh;
+    color: #bcbf77;
+    font-weight: 1000;
+    font-family: 'Josefin Sans', sans-serif;}
+
+.nav-bar img{
+    height: 4vh;
+    margin-top: -100;
+    float: left;
+    padding-top: 0.5vh;
+    padding-bottom: 0.5vh;
+    padding-left: 10vw;}
+
+
+.a-nav-scroll a  {
+    display: block;
+    float:left;
+    margin-left: 9vw;
+    padding-top:0.81vh;
+    text-decoration: none;
+    font-size: 2vh;
+    text-align: center;
+    height: 6vh;
+    padding: auto;
+
+    color:#964b00e6;
+    font-weight: 1000;
+    font-family: 'Josefin Sans', sans-serif;}
+    
+
+
+
+li {
+    border-right: 1px solid #bbb;
+
+  }
+
+
+.nav_scroll img{
+    height: 4vh;
+    margin-top: -100;
+    float: left;
+    padding-top: 0.5vh;
+    padding-bottom: 0.5vh;
+    padding-left: 10vw;
+}
+
+
+
+.nav_scroll{
+
+    height: 4vh;
+    width: 100%;
+    display:block;
+    transition: 0.1s;
+    position: fixed;
+    background-color:#40c402e6;
+    
+
+}
+
+.nav_scroll, .nav_scroll img, .a-nav-scroll a {
+  z-index: 5
+}
+
+
+
+
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+align-items: center;
+margin:auto;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+
+.intro {
+    height: 80vh;
+    background-color: yellowgreen;
+
+}
+
+
+
+
+/* MAIN!!!!! */
+
+
+
+
+
+
+
+.o_nas, .news, .wyjazdy,.historia, .galeria, .wstazki, .chata, .band, .kuchnia, .kontakt, .footer {
+    margin: 0;
+    padding: 0;
+    height: 40vh;
+    padding-top: 2vh;
+}
+
+.o_nas, .o_nas1, .o_nas2 {
+  background-color: #ffb30086;
+  opacity: 1;
+
+}
+
+.o_nas {
+  width: 100%;
+  height: 5vh;
+  margin-bottom: 0;
+
+
+
+}
+
+.o_nas1 {
+  width: 100%;
+  height: 36vh;
+  padding-left: 44vw;
+  padding-top: 5vh;
+  padding-right: 15vw;
+
+
+}
+
+.o_nas2 {
+  position: relative;
+  background-color: aqua;
+  width: 30vw;
+  float: left;
+  height: 30vh;
+  margin-top: -33vh;
+  margin-left: 10vw;
+  border-radius: 20px 40px 60px 80px;
+  background-image: url(../../photo/o_nas1.jpg);
+  background-size:cover;
+  z-index:1;
+  box-shadow: 0px 0px 15px rgb(75, 75, 75);
+
+}
+
+.img_o_nas {
+  width: 30vw;
+
+}
+
+.o_nas_h2 {
+  font-family: 'Lato', sans-serif;
+  font-size: 1.7em;
+  text-align: left;
+  
+
+  
+}
+
+.tab{
+  display: inline-block;
+  margin-left: 1em;
+}
+
+
+
+
+
+
+
+.news {
+  background-color: #964b0097;
+    height: 55vh;
+    width: 100%;
+    margin-top: 0vh
+}
+
+.main_news {
+  background-color: red;
+  position: relative;
+  width: 30vw;
+  margin-top: 3vh;
+  margin-left: 10vw;
+  height: 35vh;
+background-image: url(../../photo/news_main.jpg);
+background-size: cover;
+background-position: top 200px;
+box-shadow: 0px 0px 0px 7px rgb(0, 38, 255)
+
+}
+
+.news_main_img {
+  position: absolute;
+  width: 30vw;
+  background-color: red;
+  z-index: 6
+  
+}
+
+.font_mnews {
+  font-size: 2em;
+  font-weight: 550;
+  font-family: 'Lato', sans-serif;
+  text-decoration: none;
+}
+
+.font_news {
+  font-size: 1.5em;
+  font-weight: 550;
+  font-family: 'Lato', sans-serif;
+  text-decoration: none;
+} 
+.news_main_text {
+  position: absolute;
+  margin-left: 10vw;
+  margin-top: 1.5vh;
+}
+
+.news_1 {
+ position: absolute;
+ background-color: yellow;
+ width: 15vw;
+ height: 15vh;
+ margin-left: 50vw;
+ margin-top: -45vh;
+
+
+ box-shadow: 0px 0px 0px 5px rgb(0, 38, 255)
+
+}
+
+.news_1_img {
+  position: absolute;
+  background-color: #bcbf77;
+  width: 15vw;
+  height: 15vh;
+  background-image: url(../../photo/news_1.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+
+.news_2 {
+  position: absolute;
+  background-color: rgb(255, 255, 255);
+  width: 15vw;
+  height: 15vh;
+  margin-left: 70vw;
+  margin-top: -45vh;
+
+  box-shadow: 0px 0px 0px 5px rgb(0, 38, 255)
+ }
+
+ .news_2_img {
+  position: absolute;
+  background-color: #858750;
+  width: 15vw;
+  height: 15vh;
+  background-image: url(../../photo/news_2.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+ .news_3 {
+  position: absolute;
+  background-color: rgb(124, 124, 106);
+  width: 15vw;
+  height: 15vh;
+  margin-left: 50vw;
+  margin-top: -22vh;
+
+  background-size: cover;
+  background-position: top;
+  box-shadow: 0px 0px 0px 5px rgb(0, 38, 255);
+
+  
+ }
+
+ .news_3_img {
+  position: absolute;
+  background-color: #858750;
+  width: 15vw;
+  height: 15vh;
+  background-image: url(../../photo/news_3.jpg);
+  background-size: cover;
+  background-position: center;
+
+}
+
+
+
+ .news_4 {
+  position: absolute;
+  background-color: rgb(90, 115, 255);
+  width: 15vw;
+  height: 15vh;
+  margin-left: 70vw;
+  margin-top: -22vh;
+  box-shadow: 0px 0px 0px 5px rgb(0, 38, 255);
+
+ background-size: cover;
+ }
+
+ .news_4_img {
+  position: absolute;
+  background-color: #858750;
+  width: 15vw;
+  height: 15vh;
+  background-image: url(../../photo/news_4.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+
+.news_text1,.news_text2, .news_text3, .news_text4{
+  position: absolute;
+  margin-top: 16vh;
+
+
+
+}
+
+
+
+
+
+.camp_1, .camp_2, .camp_3, .camp_4 {
+  width: 20vw;
+  height: 25vh;
+  background-color:rgb(90, 115, 255)
+}
+
+.camp_1{
+  margin-left: 65vw;
+  margin-top: -100vh;
+ 
+  ;
+}
+
+.camp_2{
+  margin-left: 40vw;
+  margin-top: -25vh;
+  background-image: url(../../photo/wyjazd_2.jpg);
+  background-size: cover;
+  background-position: bottom;
+}
+
+.camp_3{
+  margin-left: 15vw;
+  margin-top: -25vh;
+}
+
+.camp_text1, .camp_text2, .camp_text3{
+  width: 20vw;
+  height: 25vh;
+  background-color:rgb(129, 130, 133);
+  position: absolute;
+  margin-top: 20vh;
+  margin-bottom: 60vh;
+}
+
+
+
+
+
+.card-body {
+  height: 70vh;
+  width: 100vw;
+  background-color: #ffb30086;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  justify-content: center;
+}
+
+.card {
+  display: grid;
+  grid-template-columns: 295px;
+  grid-template-rows: 189px 189px 72px;
+  grid-template-areas: "image" "text" "stats";
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  border-radius: 18px;
+  background: white;
+  box-shadow: 5px 5px 15px rgba(0,0,0,0.9);
+  text-align: center;
+  transition: 0.5s ease;
+  cursor: pointer;
+margin: 50px;
+  margin-top: 6vh;
+}
+
+.card-image1, .card-image2, .card-image3 {
+  grid-area: image;
+
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  background-size: cover;
+}
+
+.card-image2{
+background: url(../../photo/card2.jpg);
+background-size: cover;
+background-color: #717171;}
+
+
+.card-image1{
+background: url(../../photo/card1.jpg);
+background-size: cover;}
+
+.card-image3{
+  background: url(../../photo/intro2.jpg);
+  background-size: cover;}
+
+.card_img {
+  position: absolute;
+  width: 23px;
+  margin-top: -1px;
+  margin-left: -11px;
+}
+
+.cardd_img {
+  position: absolute;
+  width: 35px;
+  margin-top: -6px;
+  margin-left: -18px;
+}
+.card-text {
+  grid-area: text;
+  margin: 25px;
+}
+
+.card-text .date {
+  color: red;
+  font-size: 13px;
+}
+
+.card-text p {
+  font-size: 15px;
+  color: grey;
+  font-weight: 300
+
+}
+
+.card-h2 {
+  font-size: 28px;
+  margin-top: 0px;
+}
+
+.card-body h1 {
+  position: absolute;
+  font-size: 2.2em;
+  margin-bottom: 60vh;
+}
+
+.card-stats {
+  grid-area: stats;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  background: rgb(4, 170, 4)
+}
+
+.card-stats .stat {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 10px;
+  color: white;
+}
+
+.card-stats .type {
+ font-size: 11px;
+ font-weight: 300;
+ text-transform: uppercase;
+}
+
+.card-stats.card3 {
+  background:rgb(255, 115, 0)
+}
+.carda {
+  position: hidden;
+}
+.card-stats.card2 {
+  background:rgb(115, 124, 251)
+}
+
+.card-stats.card1 {
+  background:rgb(20, 159, 2)
+}
+
+.card-stats .value {
+  font-size: 22px;
+  font-weight: 500;
+   
+}
+.value {
+  margin-top: -10px;
+
+}
+.card-stats .border {
+  border-left: 1px solid rgb(0, 0, 0);
+  border-right: 1px solid rgb(0, 0, 0);
+}
+
+.card-stats .value sup .value1{
+  font-size: 12px;
+}
+
+.value1 {
+  width: 120px;
+  font-size: 22px;
+  padding: 0px;
+  margin-top: -9px;
+}
+
+.card:hover {
+  transform: scale(1.1);
+  box-shadow: 5px 5px 15px rgba(0,0,0,0.6)
+}
+
+
+
+
+
+
+
+.historia {
+  background-color: #964b0097;
+
+  height: 50vh;
+
+}
+
+.historia_img {
+  position: absolute;
+  width: 30vw;
+  height: 40vh;
+  background-color: #bcbf77;
+  margin-left: 15vw;
+  background-image: url(../../photo/historia.png);
+  background-size: cover;
+
+}
+
+.histria_year20, .histria_year21, .histria_year22, .histria_year23 {
+  position: absolute;
+  width: 30vw;
+  height: 8vh;
+  background-color: #ffffff9a;
+  margin-left: 55vw;
+  border-radius: 15px;;
+
+
+
+}
+
+.his_nag_font {
+  text-align: left;
+  font-size: 1.2em;
+  margin-top: -50vh;
+  color:rgb(27, 116, 0);
+  font-weight: bold;
+  font-family: 'Lato', sans-serif;
+
+}
+
+.his_rok_font {
+  font-size: 1.3em;
+  font-family: 'Lato', sans-serif;
+  font-weight: bold;
+  color: rgb(4, 12, 255);
+}
+
+
+.his_font{
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+  font-size: 1.2em
+}
+
+.histria_year20{
+margin-top: 30.95vh;
+text-align: center;
+z-index: 2;
+
+}
+
+
+.histria_year21{
+  margin-top: 20.95vh;
+  text-align: center;
+  z-index: 2;
+  text-align: center;
+  }
+  
+
+  .histria_year22{
+    margin-top: 10.5vh;
+    text-align: center;
+    z-index: 2;
+    }
+    
+    .histria_year23{
+      margin-top: 0;
+      z-index: 2;
+      text-align: center;
+      }
+      
+
+
+ul.his_ul_23_1 {
+  list-style-type: circle;
+  margin-left: 3vw;
+  position: absolute;
+  text-align: center;
+  text-align: left;
+  width: 90vw;
+margin-top: -0.5vh;
+}
+
+
+
+
+ul.his_ul_23_2 {
+  list-style-type: circle;
+  margin-left: 14vw;
+  position: absolute;
+  text-align: center;
+margin-right: 2vw;
+  margin-top: -5.5vh;
+  width: 10vw;
+  text-align: left;
+  width: 80vw;
+
+  
+}
+
+
+.year_line {
+  width: 50px;
+  height: 2px;
+  background-color: #ff6600;
+  position: absolute;
+  margin-top: 2.5vh;
+  margin-left: 13.5vw;
+  opacity: 1;
+  box-shadow: 0px 0px 2px rgb(0, 0, 0);
+}
+
+
+.his_hr2, .his_hr3, .his_hr4 {
+  width: 20%;
+  height: 7px;
+  background-color: rgb(136, 0, 255);
+  margin-left: 60vw;
+  z-index: 3;
+  box-shadow: 1px 2px 5px red;
+
+}
+
+
+.his_hr2 {
+  position: absolute;
+  margin-top: 8.75vh
+
+}
+
+.his_hr3 {
+  position: absolute;
+  margin-top: 19.25vh
+
+}
+
+.his_hr4 {
+  position: absolute;
+  margin-top: 29.5vh
+
+}
+
+
+
+.galeria {
+  background-color: #ffb30086;
+  /* file:///C:/Users/jkfor/Desktop/Javascript-Image-Slider-master/index.html */
+
+height: 65vh;
+
+
+}
+
+.test{
+  background-color: #e5eb33;
+  width: 10vw;
+  height: 10vh;
+  background-image: url(../../ros_web.png);
+  position: absolute
+}
+
+
+
+.wstazki {
+  background-color: #964b0097;
+
+  height: 56vh;
+}
+
+.ribon_1 {
+  position: absolute;
+  margin-top: 2vh;
+  margin-left: 40vw;
+  width: 103px;
+}
+
+.ribon_2 {
+  position: absolute;
+  margin-top: 2vh;
+  margin-left: 50vw;
+  width: 103px;
+
+
+}
+
+.ribon_3{
+  position: absolute;
+  margin-top: 2vh;
+  margin-left: 60vw;
+ width: 103px;
+
+}
+
+.ribon_4  {
+  position: absolute;
+  margin-top: 2vh;
+  margin-left: 70vw;
+
+  width: 103px;
+}
+
+.ribon_w {
+  position: absolute;
+  margin-top: 5vh;
+  margin-left: 15vw;
+  font-size: 1.7em;
+  font-family: 'Lato', sans-serif;
+  font-weight: 550;
+  color:rgb(0, 60, 255)
+}
+
+
+.ribon_t {
+  position: absolute;
+  margin-top: 9.5vh;
+  margin-left: 15vw;
+  font-size: 1.5em;
+  color: rgb(3, 157, 8);
+  font-weight: 550;
+  font-family: 'Lato', sans-serif;
+}
+.ribon_l {
+  position: absolute;
+  margin-top: 9.5vh;
+  margin-left: 20vw;
+  font-size: 1.5em;
+  font-family: 'Lato', sans-serif;
+  font-weight:bolder;
+
+
+}
+
+.ribon_z {
+  position: absolute;
+  margin-top: 14vh;
+  margin-left: 15vw;
+  font-size: 1.5em;
+  line-height: 30px;;
+  color:rgb(54, 54, 54);
+  font-family: 'Lato', sans-serif;
+}
+
+
+
+
+.ribon_t1 {
+  position: absolute;
+  margin-top: 41vh;
+  margin-left: 39vw;
+  font-size: 1.5em;
+  font-family: 'Lato', sans-serif;
+  font-weight: 900;
+}
+
+.ribon_t2 {
+  position: absolute;
+  margin-top: 41vh;
+  margin-left: 50.5vw;
+  font-size: 1.5em;
+    font-family: 'Lato', sans-serif;
+    font-weight: 900;
+}
+
+
+.ribon_t3 {
+  position: absolute;
+  margin-top: 41vh;
+  margin-left: 59.4vw;
+  font-size: 1.4em;
+  font-family: 'Lato', sans-serif;
+  font-weight: 900;
+  
+ 
+}
+
+.ribon_t4 {
+  position: absolute;
+  margin-top: 41vh;
+  margin-left: 71vw;
+  font-size: 1.4em;
+  font-family: 'Lato', sans-serif;
+  font-weight: 900;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.ros_band {
+  height: 48vh;
+  background-color: #ffb30086;
+  padding-top: 2vh;;
+
+}
+
+.band_yt {
+
+  position: relative;
+  margin-left: 9vw;
+  margin-top: 2vh;
+}
+
+.ros_na {
+  position: absolute;
+  margin-top: 5vh;
+  margin-left: 5rem;
+  font-size: 2.2em;
+  color:rgb(23, 2, 255);
+  font-weight: BOLD;
+  font-family: 'Lato', sans-serif;
+  -webkit-text-stroke:  1px rgb(0, 183, 249);
+  text-shadow: 3px 3px 0px rgb(167, 245, 243);
+  text-overflow: inherit;
+
+
+}
+.zespol {
+  position: absolute;
+  margin-top: 12vh;
+  margin-left: 5rem;
+  font-size: 1.6em;
+  color:rgb(0, 157, 29);
+  font-weight: BOLD;
+  font-family: 'Lato', sans-serif;
+}
+
+.band_ja {
+  position: absolute;
+  margin-top: 16vh;
+  margin-left:  6vw;
+  font-size: 1.4em;
+  color:#000000;
+  font-family: 'Lato', sans-serif;
+
+}
+
+.band_opis {
+  position: absolute; 
+  margin-top: 30vh;
+  margin-left: 5vw;
+  font-size: 1.5em;
+  font-family: 'Lato', sans-serif;
+  color:rgb(9, 9, 9);
+  width: 620px;
+  text-align: center ;
+}
+
+
+.chat {
+  height: 45vh;
+  background-color: #964b0097;
+  padding-top: 2vh;
+}
+
+.chata_img {
+  width: 33vw;
+  height: 32vh;
+  background-color: #e5eb33;
+  margin-left: 55vw;
+  margin-top: 2vh;
+  background-image: url(../../photo/chata1.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.chata_okrzyk {
+  position: absolute;
+  margin-top: -31vh;
+  margin-left: 13rem;
+  font-size: 1.9em;
+  font-weight: BOLD;
+  font-family: 'Lato', sans-serif;
+  color: rgb(255, 136, 0); 
+  -webkit-text-stroke:  1px rgb(226, 1, 1);
+  text-shadow: 3px 3px 0px rgb(247, 209, 105);
+}
+
+.chata_opis{
+  position: absolute;
+  margin-top: -25vh;
+  margin-left: 10vw;
+  font-size: 1.5em;
+  margin-right: 55vw;
+  text-align: justify
+}
+
+
+
+
+.kuchnia {
+  background-color: #ffb30086;
+  /* https://www.youtube.com/watch?v=li-ylRo7VEc */
+  height: 58vh;
+}
+
+.kuch_kurczak {
+  position: absolute;
+  font-size: 1.5rem;
+  margin-left: 20vw;
+  margin-top: 3vh;
+  color: rgb(57, 108, 2);
+  font-weight: BOLD;
+  font-family: 'Lato', sans-serif;
+  -webkit-text-stroke:  1px rgb(38, 255, 0);
+  text-shadow: 3px 3px 0px rgb(255, 255, 255);
+
+}
+
+.kuch_ku {
+  position: absolute;
+  margin-top: 3vh;
+  margin-left: 36vw;
+  font-size: 1.4rem;
+  font-family: 'Lato', sans-serif;
+}
+
+.kuch_img {
+  position: absolute;
+  width: 25vw;
+  height: 35vh;
+  background-color: #bcbf77;
+  margin-left: 15vw;
+  margin-top: 9vh;
+  background-image: url(../../photo/kuch_img1.jpeg);
+  background-size: cover;
+  background-position: bottom;
+}
+
+.kuch_potrawa {
+  position: absolute; 
+  margin-top: 9vh;
+  font-size: 1.5em;
+  font-family: 'Lato', sans-serif;
+  font-weight: bolder;
+  margin-left: 50vw;
+  font-size: 1.9em;
+  font-family: 'Lato', sans-serif;
+  font-weight: bold;
+  color:rgb(255, 106, 0);
+  text-shadow: 3px 3px 0px rgb(216, 216, 216);
+}
+
+.kuch_h_s {
+  position: absolute;
+  margin-top: 15vh;
+  margin-left: 50vw;
+  font-size: 1.5em;
+  font-family: 'Lato', sans-serif;
+  font-weight: bolder;
+}
+
+.kuch_s {
+  position: absolute;
+  margin-top: 19vh;
+  margin-left: 51vw;
+  font-size: 1.5em;
+}
+
+.kuch_przy {
+  position: absolute;
+  margin-top: 15vh;
+  margin-left: 67vw;
+  font-size: 1.6em;
+  font-size: 1.5em;
+  font-family: 'Lato', sans-serif;
+  font-weight: bolder;
+
+}
+
+.kuch_l_przy {
+  position: absolute;
+  margin-top: 19vh;
+  margin-left: 69vw;
+  font-size: 1.5em;
+}
+
+.kuch_more {
+  position: absolute;
+  margin-top: 46vh;
+  margin-left: 46vw;
+  font-size: 1.4em;
+  font-family: 'Lato', sans-serif;
+  font-size: 1.5em;
+  font-family: 'Lato', sans-serif;
+  font-weight: bolder;
+  
+
+}
+
+
+
+
+
+.kontakt {
+
+  /* file:///C:/Users/jkfor/Desktop/Contact-Us-Form-master/index.html */
+  height: 64vh;
+
+}
+
+.footer {
+  background-color: #ffb30086;
+height: 15vh;}

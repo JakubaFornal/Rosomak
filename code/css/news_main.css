@@ -1,0 +1,246 @@
+body{
+    margin: 0;
+    height: 500vh;
+}
+
+.intro {
+    width: 100vw;
+    height: 30vh;
+    background-color: blue;
+    background-image: url(../../photo/baner_rososmak_423.png);
+    background-size: cover;
+}
+
+h1 {
+
+    font-weight: BOLD;
+    font-family: 'Lato', sans-serif;
+    -webkit-text-stroke:  1.5px rgb(0, 47, 255);
+    text-shadow: 3px 3px 0px rgb(0, 128, 255);
+    color: rgb(255, 125, 4);
+    font-size: 5em;
+}
+h4 {
+        font-weight: BOLD;
+    font-family: 'Lato', sans-serif;
+    -webkit-text-stroke:  0.5px rgb(4, 161, 234);
+    text-shadow: 1px 1px 0px rgb(174, 216, 255);
+    color: rgb(0, 115, 182);
+    font-size: 1.4em
+}
+
+h5 {
+    font-weight: BOLD;
+    font-family: 'Lato', sans-serif;
+    -webkit-text-stroke:  0.5px rgb(0, 47, 255);
+    text-shadow: 1px 1px 0px rgb(255, 255, 255);
+    color: rgb(0, 111, 176);
+    font-size: 1.5em;
+    margin-top: 100px;
+    margin-right: 20px
+}
+
+p {
+
+    font-family: 'Lato', sans-serif;
+    text-align: left;
+    color: rgb(0, 0, 0);
+    font-size: 18px; 
+    display: block;
+    margin-bottom: 30px;
+    margin-top: 50px;
+
+}
+
+.header_more {
+    text-align: center;
+    width: 550px;
+    height: 100px;
+
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.header_data{
+    position: absolute;
+    text-align: left;
+    margin-top: 15px;
+    margin-left: 50px;
+}
+
+.header_calendar {
+    position: absolute;
+    width: 25px;
+    margin-left: -260px;
+    margin-top: 17px;
+}
+
+
+
+.h1_after {
+    position: absolute;
+    width:100%;
+    height: 10px;
+    background-color: rgb(0, 142, 50);
+
+}
+
+.header_place{
+    position: absolute;
+    margin-left: 350px;
+    margin-top: 15px;
+}
+
+.header_location {
+    position: absolute;
+    width: 35px;
+    margin-left: 40px;
+    margin-top: 12px;
+
+}
+
+
+.header {
+    text-align: center;
+
+    height: 5vh;
+    width: 100vw;
+    align-items: center;
+}
+
+
+
+.main {
+    width: 60vw;
+
+    height: 150vh;
+    margin-left: 10vw;
+    margin-top: 0vh;
+    float: left;
+    padding-left:10px
+    
+}
+
+.head_link a {
+    color: red;
+    text-decoration: none;
+    font-weight: BOLD;
+    font-family: 'Lato', sans-serif;
+    -webkit-text-stroke:  0.5px rgb(116, 158, 255);
+    text-shadow: 1px 1px 0px rgb(0, 0, 0);
+    color: rgb(0, 111, 176);
+    font-size: 1.2em;
+}
+
+.head_link {
+    position: absolute;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.sticky{
+    width: 15vw;
+    height: 90vh;
+
+    position: sticky;
+    top: 100px;
+    margin-top: 12vh;
+    float: right;
+ margin-right: 5vw;
+
+}
+
+
+.news1, .news2, .news3, .news4 {
+    width: 15vw;
+    height: 15vh;
+    background-color: rgb(24, 136, 115);
+    position: absolute;
+}
+
+.s_news1, .s_news2, .s_news3, .s_news4 {
+    width: 15vw;
+    height: 20vh;
+    background-color: rgb(214, 214, 214);
+    position: absolute;
+
+}
+
+.new2{
+    margin-top: 27vh;
+}
+.new3{
+    margin-top: 52vh;
+}
+
+.new4{
+    margin-top: 77vh
+}
+
+.news1{
+    background-image: url(../../photo/news_3.jpg);
+    background-size: cover;
+    background-position: top; 
+}
+
+.news2{
+    background-image: url(../../photo/news_1.jpg);
+    background-size: cover;
+    background-position: center; 
+}
+
+.news3{
+    background-image: url(../../photo/news_2.jpg);
+    background-size: cover;
+    background-position: center; 
+}
+
+.news_a{
+    font-size: 1.5em;
+    font-weight: 550;
+    font-family: 'Lato', sans-serif;
+    text-decoration: none;
+    position: absolute;
+    margin-top: 16vh;
+    margin-left: 1vw;
+}
+
+.img_1 {
+    width: 600px;
+    height: auto;
+
+}
+.img_2 {
+    width: 20vw;
+    height: auto;
+}
+
+.img_4 {
+    width: 600px;
+    height: auto;
+
+}
+.img_3 {
+    width: 20vw;
+    height: auto;
+}
+
+.img_5 {
+    width: 500px;
+    height: auto;
+
+}
+.img_6 {
+    width: 500px;
+    height: auto;
+}
+
+.img_7 {
+    width: 500px;
+    height: auto;
+
+}
+.img_8 {
+    width: 500px;
+    height: auto;
+}

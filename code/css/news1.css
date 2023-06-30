@@ -1,0 +1,13 @@
+.sticky{
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    position: sticky;
+    top: 10px;
+    margin-top: 100px;
+
+}
+
+body {
+    height: 200vh;
+}
